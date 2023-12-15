@@ -1,134 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Projects - Yash Jadhav</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-    /* CSS styling goes here */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+ <title>Projects - Yash Jadhav</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <style>
+   :root {
+     --background-color: #f4f4f4;
+     --text-color: #333;
+     --link-color: #333;
+   }
 
-    /* Header Styles */
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: var(--background-color);
+     color: var(--text-color);
+   }
 
-    h1 {
-      margin: 0;
-    }
+   a {
+     color: var(--link-color);
+   }
 
-    /* Navigation Styles */
-    nav {
-      background-color: #555;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+   /* Header Styles */
+   header {
+     background-color: #333;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+     margin-bottom: 20px;
+   }
 
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
+   h1 {
+     margin: 0;
+   }
 
-    nav ul li {
-      display: inline;
-    }
+   /* Footer Styles */
+   footer {
+     background-color: #555;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+   }
 
-    nav ul li a {
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-    }
+   /* Navigation Styles */
+   nav {
+     background-color: #555;
+     color: #fff;
+     padding: 10px;
+     text-align: center;
+     margin-bottom: 20px;
+   }
 
-    /* Main Content Styles */
-    main {
-      padding: 20px;
-    }
+   nav ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+   }
 
-    h2 {
-      margin-top: 0;
-    }
+   nav ul li {
+     display: inline;
+   }
 
-    /* Project Card Styles */
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      max-width: 800px;
-      margin: auto;
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-    }
+   nav ul li a {
+     color: #fff;
+     padding: 10px 20px;
+     text-decoration: none;
+   }
 
-    .card h3 {
-      margin-bottom: 10px;
-    }
+   /* Main Content Styles */
+   main {
+     padding: 20px;
+   }
 
-    .card p {
-      margin-bottom: 20px;
-    }
+   h2 {
+     margin-top: 0;
+   }
 
-    /* Back Button Styles */
-    .back-btn {
-      display: inline-block;
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border: none;
-      margin-bottom: 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
+   /* Project Card Styles */
+   .card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     max-width: 800px;
+     margin: auto;
+     background-color: #fff;
+     padding: 20px;
+     margin-bottom: 20px;
+     border-radius: 5px;
+     mix-blend-mode: difference;
+   }
 
-    .back-btn i {
-      margin-right: 5px;
-    }
+   .card h3 {
+     margin-bottom: 10px;
+   }
 
-    .back-btn:hover {
-      background-color: #555;
-    }
+   .card p {
+     margin-bottom: 20px;
+   }
 
-    /* Icons */
-    .icon {
-      margin-right: 5px;
-    }
-  </style>
+   /* Back Button Styles */
+   .back-btn {
+     display: inline-block;
+     background-color: #333;
+     color: #fff;
+     padding: 10px 20px;
+     text-decoration: none;
+     border: none;
+     margin-bottom: 20px;
+     cursor: pointer;
+     border-radius: 5px;
+   }
+
+   .back-btn i {
+     margin-right: 5px;
+   }
+
+   .back-btn:hover {
+     background-color: #555;
+   }
+
+   .project-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+
+   /* Icons */
+   .icon {
+     margin-right: 5px;
+   }
+ </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <h1>Projects - Yash Jadhav</h1>
-    <p>AI and Data Science Engineer</p>
-  </header>
+ <!-- Navigation Bar -->
+ <header>
+   <h1>Projects - Yash Jadhav</h1>
+   <p>AI and Data Science Engineer</p>
+ </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="achievements.html">Achievements</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+ <nav>
+   <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="projects.html">Projects</a></li>
+     <li><a href="achievements.html">Achievements</a></li>
+     <li><a href="contact.html">Contact</a></li>
+   </ul>
+ </nav>
 
-  <main>
-    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left icon"></i> Back</a>
+ <main>
 
-    <h2>Projects</h2>
+  <a href="index.html" class="back-btn"><i class="fas fa-arrow-left icon"></i> Back</a>
+  <button id="night-mode-toggle">Toggle</button>
 
-    <!-- Project Cards -->
+    
+   <div class="project-container">
+    
+<!-- Project Cards -->
+
+
+  <!-- Project Cards -->
     <div class="card">
       <h3>Chakkshyu_Smart Glasses</h3>
       <p>Jun 2020 - Dec 2021</p>
@@ -141,11 +173,11 @@
       <p>Developed the Hardware + Software prototype project which includes USB Dongle for establishing connections and working with partnering software...</p>
     </div>
 
-    <!-- Add more project cards here -->
-    
-    <!-- Additional projects -->
+  <!-- Add more project cards here -->
+  
+  <!-- Additional projects -->
 
-    <!-- Extra Projects -->
+  <!-- Extra Projects -->
     <div class="card">
       <h3>CG project</h3>
       <p>Jul 2021 - Aug 2022</p>
@@ -163,14 +195,52 @@
       <p>Oct 2022 - Dec 2022</p>
       <p>Library management project utilizing HTML, CSS, JS as frontend & PHP for backend operations MySQL as backend cross-platform for data storage...</p>
     </div>
-  </main>
+</div>
+</main>
 
-  <footer>
-    <p>&copy; 2023 Yash Jadhav. All rights reserved.</p>
-  </footer>
+ <footer>
+   <p>&copy; 2023 Yash Jadhav. All rights reserved.</p>
+ </footer>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <!-- Your scripts here -->
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <script>
+   document.getElementById('night-mode-toggle').addEventListener('click', function() {
+     var style = getComputedStyle(document.documentElement);
+     if (style.getPropertyValue('--background-color') === '#f4f4f4') {
+       // Switch to night mode
+       document.documentElement.style.setProperty('--background-color', '#333');
+       document.documentElement.style.setProperty('--text-color', '#f4f4f4');
+       document.documentElement.style.setProperty('--link-color', '#f4f4f4');
+     } else {
+       // Switch to day mode
+             // Switch to day mode
+      document.documentElement.style.setProperty('--background-color', '#f4f4f4');
+      document.documentElement.style.setProperty('--text-color', '#333');
+      document.documentElement.style.setProperty('--link-color', '#333');
+    }
+  });
+
+  // Adjust the text color of each card
+  var cards = document.querySelectorAll('.card');
+  cards.forEach(function(card) {
+    adjustTextColor(card);
+  });
+
+  // Update the text color of each card when the background color changes
+  var observer = new MutationObserver(function() {
+    cards.forEach(adjustTextColor);
+  });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['style'] });
+
+  // Function to adjust the text color
+  function adjustTextColor(element) {
+    var rgb = window.getComputedStyle(element).backgroundColor.match(/\d+/g);
+    var yiq = ((rgb[0]*299)+(rgb[1]*587)+(rgb[2]*114))/1000;
+    element.style.color = (yiq >= 128) ? 'black' : 'white';
+  }
+ </script>
 </body>
 </html>
+
+       

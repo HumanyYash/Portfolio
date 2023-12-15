@@ -61,21 +61,33 @@
       flex-direction: column;
     }
 
-    /* WOW animation... */
-
     /* Back Button Styles */
     .back-btn {
       display: block;
       width: 100px;
       margin: 20px auto;
       padding: 10px 20px;
-      text-align: center;
+      text-align: left;
       background-color: #333;
       color: #fff;
       text-decoration: none;
       border: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
+      position: relative;
+      padding-left: 30px; /* Add space for the arrow */
+    }
+
+    .back-btn::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(135deg) translate(-50%, -50%);
     }
 
     .back-btn:hover {
@@ -147,8 +159,10 @@
   </nav>
 
   <main>
+  <a href="index.html" class="back-btn"></a>
+  <div>
     <h2>Achievements</h2>
-
+   
     <!-- Achievements Cards -->
     <div class="card animate__animated animate__zoomIn">
       <h3>Chief Igniter of D2C or Unstop Igniter's Club</h3>
@@ -172,7 +186,7 @@
       <h3>Google Cloud Ultimate Milestone in 2021</h3>
       <p>Achieved Google Cloud Ultimate Milestone in 2021.</p>
     </div>
-    <a href="index.html" class="back-button">Back</a>
+  </div>
   </main>
 
   <footer>
@@ -185,3 +199,4 @@
   </script>
 </body>
 </html>
+
