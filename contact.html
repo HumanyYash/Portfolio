@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Yash Jadhav</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* CSS styling goes here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header, Navigation, Main Content, Footer styles... */
+
+    /* Navigation styles */
+    nav {
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    /* Main Content */
+    main {
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Add position relative for the main container */
+    }
+    
+    h2 {
+      margin-top: 0;
+    }
+    
+    .slider {
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .slider img {
+      width: 100%;
+      display: none;
+    }
+
+    .slider img:first-child {
+      display: block; /* Display the first image */
+    }
+
+    /* Text over the slider */
+    .text-over-slider {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    /* Back button */
+    .back-btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border: none;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Yash Jadhav</h1>
+    <p>AI and Data Science Engineer</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>About Me</h2>
+    <p>I am Yash Jadhav, an AI and Data Science Engineer.</p>
+    
+    <h3>Contact Information</h3>
+    <ul>
+        <li>Email: jadhavyash264@gmail.com</li>
+        <li>Phone: 8767678794</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/jadhavyash">jadhavyash</a></li>
+        <!-- Add any other contact info you'd like -->
+    </ul>
+
+    <div class="slider">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <!-- Add more images -->
+        <div class="text-over-slider">
+          This text is over the slider images
+        </div>
+    </div>
+
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">Back</a>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Yash Jadhav. All rights reserved.</p>
+  </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript for image slider
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+
+    function showSlide() {
+        slides.forEach((slide) => (slide.style.display = 'none'));
+        slides[currentSlide].style.display = 'block';
+        currentSlide = (currentSlide + 1) % slides.length;
+        setTimeout(showSlide, 3000); // Change image every 3 seconds
+    }
+
+    showSlide(); // Start the slider
+  </script>
+</body>
+</html>
