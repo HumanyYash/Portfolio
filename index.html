@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yash Jadhav - Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* CSS styling goes here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    /* Navigation */
+    nav {
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    
+    /* Main Content */
+    main {
+      padding: 20px;
+    }
+    
+    h2 {
+      margin-top: 0;
+    }
+    
+    /* Contact Form */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #555;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yash Jadhav</h1>
+    <p>AI and Data Science Engineer</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Welcome to my portfolio website!</h2>
+    <p>Here you can learn more about my skills, projects, and achievements.</p>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Yash Jadhav. All rights reserved.</p>
+  </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript for contact form submission
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Perform form validation
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const messageInput = document.getElementById('message');
+
+      if (!nameInput.value || !emailInput.value || !messageInput.value) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      // Form is valid, submit the form
+      alert('Form submitted successfully!');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
