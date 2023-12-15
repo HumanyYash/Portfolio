@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Yash Jadhav</title>
+  <style>
+    /* Your existing CSS styles for the About page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .profile-img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: -1;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 999;
+    }
+    /* Rest of your styles */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="intro">
+      <h1>Yash Jadhav</h1>
+      <img src="img.jpg" alt="Yash Jadhav" class="profile-img">
+      <p>AI and Data Science Engineer</p>
+    </div>
+
+    <!-- Rest of your content -->
+   <!-- Rest of your content -->
+<div class="blog-section">
+    <h2>Yash Jadhav - A Journey Through AI and Data Science</h2>
+    <p>Welcome to my blog! I'm Yash Jadhav, an aspiring AI and Data Science Engineer passionate about leveraging technology to create a positive impact. My journey into the realm of Artificial Intelligence and Data Science has been both exhilarating and enlightening.</p>
+  
+    <h3>Education and Skills</h3>
+    <p>I am currently pursuing a Bachelor's degree in Artificial Intelligence and Data Science from K.K. Wagh Institute of Engineering Education and Research. My education has provided a solid foundation in Python, Machine Learning, Deep Learning, Natural Language Processing, and Big Data technologies like Hadoop and Spark.</p>
+  
+    <h3>Language of Machines</h3>
+    <p>Being fluent in the language of machines, I explore the world of algorithms, models, and data structures to solve complex problems. The ability to communicate with machines empowers me to harness their potential for real-world applications.</p>
+  
+    <h3>Passion for Innovation</h3>
+    <p>My passion lies in leveraging AI and Data Science to innovate solutions that address societal challenges. I strongly believe in utilizing technology as a catalyst for positive change, whether it's optimizing processes or enhancing user experiences.</p>
+  
+    <h3>Continuous Learning</h3>
+    <p>In this ever-evolving field, continuous learning is imperative. I remain committed to staying updated with the latest advancements, attending workshops, and engaging in hands-on projects to expand my knowledge horizon.</p>
+  
+    <!-- Add more sections or content as needed -->
+  </div>  
+  </div>
+
+  <script>
+    // Create a watermark image
+    const watermarkImg = new Image();
+    watermarkImg.src = 'watermark.png';
+    watermarkImg.classList.add('watermark');
+    document.body.appendChild(watermarkImg);
+  
+    // Create a back button
+    const backButton = document.createElement('button');
+    backButton.innerText = 'Back';
+    backButton.classList.add('back-button');
+    document.body.appendChild(backButton);
+  
+    // Event listener for the back button
+    backButton.addEventListener('click', () => {
+      window.location.href = 'index.html'; // Change this to the desired page
+    });
+  </script>
+  
+</body>
+</html>
