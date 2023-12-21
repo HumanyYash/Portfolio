@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Snake Game</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 font-sans">
+   <nav class="bg-gray-800 text-white p-4 flex justify-between items-center">
+       <div class="flex items-center">
+           <svg class="w-8 h-8 fill-current text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+               <!-- Replace with your own logo or icon -->
+               <path d="M11 2H8a1 1 0 00-1 1v3H5a1 1 0 00-1 1v3H2a1 1 0 00-1 1v3H0v3h1v3h2v3h3v-3h8v3h3v-3h2v-3h1v-3h-1v-3h-2v-3h-3V9h-3V6h-3V3a1 1 0 00-1-1zM3 8h3v3H3V8zm5 0h3v3H8V8zm7 0h3v3h-3V8zm4 4h3v3h-3v-3zm-7 3v3H8v-3h3zm-4 0v3H4v-3h3zm4 4v3H8v-3h3zm7 0v3h-3v-3h3zm-4 0v3h-3v-3h3zm4 4v3h-3v-3h3zm-7 0v3H8v-3h3z"/>
+           </svg>
+           <span class="text-lg font-bold">Snake Game</span>
+       </div>
+       <div class="flex items-center">
+           <button id="startBtn" class="btn">Start</button>
+           <button id="endBtn" class="btn">End</button>
+           <button id="pauseBtn" class="btn">Pause</button>
+           <button id="restartBtn" class="btn">Restart</button>
+           <button id="leaderboardBtn" class="btn">Leaderboard</button>
+       </div>
+   </nav>
+
+   <main class="flex flex-col items-center justify-center h-screen">
+       <div id="game" class="board"></div>
+       <div id="food" class="food"></div>
+       <div class="flex justify-center mt-4">
+           <p class="text-white mr-8">Score: <span id="score">0</span></p>
+           <p class="text-white">High Score: <span id="highScore">0</span></p>
+       </div>
+   </main>
+
+   <footer class="text-center text-gray-500 text-sm py-4">
+       Made by Yash Jadhav
+   </footer>
+
+   <script src="scripts.js"></script>
+</body>
+
+</html>
